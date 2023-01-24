@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .navbar {
     background: #141414;
     height: 80px;
@@ -328,7 +332,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     .main_content h1 {
         font-size: 2rem;
         margin-top: 3rem;
@@ -351,14 +355,14 @@
 
 /* Services Section CSS */
 .services {
-    background: #141414;
+    background: #414141;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    /*background-image: url('/images/software.jpeg');
+    min-height: 100vh;
+    background-image: url('/images/software.jpeg');
     background-blend-mode: multiply;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 .services h1 {
@@ -401,6 +405,7 @@
     background-size: contain;
     margin-right: auto;
     margin-left: auto;
+    margin: 15px;
     position: relative;
     color: #fff;
 }
@@ -457,11 +462,12 @@
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.60);
 }
 
 @media screen and (max-width: 960px) {
     .services {
-        height: 1600px;
+        min-height: 1600px;
     }
 
     .services h1 {
@@ -470,9 +476,9 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     .services {
-        height: 1400px;
+        min-height: 1200px;
     }
 
     .services h1 {
@@ -492,6 +498,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 }
 
 #footer_logo {
@@ -609,7 +616,8 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
+
     .footer_link-items {
         margin: 0;
         padding: 10px;
