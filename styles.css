@@ -252,7 +252,6 @@ body {
 
 .main_btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77662 0%, #fe5160 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -260,8 +259,10 @@ body {
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
+    background-image: linear-gradient(to top, #f77662 0%, #fe5160 100%);
     transition: all 0.35s;
     outline: none;
+    text-decoration: none;
 }
 
 .main_btn a {
@@ -355,20 +356,18 @@ body {
 
 /* Services Section CSS */
 .services {
-    background: #414141;
+    background: #F0F0F0;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url('/images/bsale.jpg');
-    background-blend-mode: multiply;
     background-size: cover;
     justify-content: center;
 }
 
 .services h1 {
     background-color: #ff8177;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to right,
        #ff8177 0%,
        #ff867a 0%,
@@ -376,6 +375,11 @@ body {
        #f99185 52%,
        #cf556c 78%, 
        #b12a5b 100%
+    ); */
+    background-image: linear-gradient(
+        to right,
+       #91a9e5 50%, 
+       #4850ff 100%
     );
     background-size: 100%;
     margin-bottom: 5rem;
@@ -400,7 +404,7 @@ body {
     border-radius: 4px;
     background-image: linear-gradient(to bottom,
    rgba(0,0,0,0) 0%,
-   rgba(11,11,11,0.6) 100%),
+   rgba(11,11,11,0.9) 100%),
      url('/images/BlazePOSLogo.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -413,22 +417,22 @@ body {
 
 .services_card:nth-child(2) {
     background-image: linear-gradient(to bottom,
-   rgba(0,0,0,0) 0%,
-   rgba(11,11,11,0.6) 100%),
+    rgba(0,0,0,0) 0%,
+    rgba(11,11,11,0.9) 100%),
      url('/images/droidgreen.png');
 }
 
 .services_card:nth-child(3) {
     background-image: linear-gradient(to bottom,
-   rgba(0,0,0,0) 0%,
-   rgba(11,11,11,0.6) 100%),
+    rgba(0,0,0,0) 0%,
+    rgba(11,11,11,0.9) 100%),
      url('/images/blazingchef.png');
 }
 
 .services_card:nth-child(4) {
     background-image: linear-gradient(to bottom,
-   rgba(0,0,0,0) 0%,
-   rgba(11,11,11,0.6) 100%),
+    rgba(0,0,0,0) 0%,
+    rgba(11,11,11,0.9) 100%),
      url('/images/box.png');
 }
 
@@ -444,6 +448,7 @@ body {
     left: 30px;
 }
 
+/* NOT USED */
 .services_card button {
     color: #fff;
     padding: 10px 20px;
@@ -463,12 +468,13 @@ body {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.60);
+    background-color: rgba(255, 255, 255, 0.80);
 }
 
 @media screen and (max-width: 960px) {
     .services {
         min-height: 1600px;
+        justify-self: center;
     }
 
     .services h1 {

@@ -9,8 +9,8 @@
       name="description"
       content="This website focuses on Point Of Sales systems"
     />
-    <title>JTech Studios | Services</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>JTech Studios | Products</title>
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/font-awesome/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,13 +33,13 @@
         </div>
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="/" class="navbar_links">Home</a>
+            <a href="/pages/index.html" class="navbar_links">Home</a>
           </li>
           <li class="navbar_item">
-            <a href="/services.html" class="navbar_links">Services</a>
+            <a href="/pages/services.html" class="navbar_links">Services</a>
           </li>
           <li class="navbar_item">
-            <a href="/product.html" class="navbar_links">Products</a>
+            <a href="/pages/product.html" class="navbar_links">Products</a>
           </li>
           <li class="navbar_btn">
             <a href="/" class="button">Sign Up</a>
@@ -53,12 +53,12 @@
       <div class="main_container">
         <div class="main_content">
           <h1>OUR</h1>
-          <h2>SERVICES</h2>
-          <p>Our goal is to keep our client's business full operational.</p>
+          <h2>PRODUCTS</h2>
+          <p>See our solutions and what they have to offer.</p>
           <button class="main_btn"><a href="/">Get Started</a></button>
         </div>
         <div class="main_img--container">
-          <img src="images/servicesLogo.svg" alt="No image" id="main_img" />
+          <img src="/images/productsLogo.svg" alt="No image" id="main_img" />
         </div>
       </div>
     </div>
@@ -67,18 +67,21 @@
     <div class="services">
       <h1>Our Softwares</h1>
       <div class="services_container">
-        <div class="services_card">
-          <h2>BlazePOS</h2>
-          <p>
-            Our flagship Point of Sales software easy yet powerful to match your
-            business needs
-          </p>
-          <button>Get Info</button>
-        </div>
+        <a href="/pages/blazepos.html">
+          <div
+            class="services_card"
+            onclick="window.location.href='/blazepos.html'"
+          >
+            <h2>BlazePOS</h2>
+            <p>
+              Our flagship Point of Sales software easy yet powerful to match
+              your business needs
+            </p>
+          </div>
+        </a>
         <div class="services_card">
           <h2>DroidPOS</h2>
           <p>A light-weight Point of Sales system to get right into business</p>
-          <button>Get Info</button>
         </div>
         <div class="services_card">
           <h2>Blazing Chef</h2>
@@ -86,7 +89,6 @@
             A fast and responsive Kitchen Video system made for swiftly operate
             on the kitchen side
           </p>
-          <button>Get Info</button>
         </div>
         <div class="services_card">
           <h2>Blaze Scan</h2>
@@ -94,7 +96,6 @@
             A Inventory Management System to easy manage and maintain your
             business inventory
           </p>
-          <button>Get Info</button>
         </div>
       </div>
     </div>
@@ -112,7 +113,7 @@
           </div>
           <div class="footer_link-items">
             <h2>Products</h2>
-            <a href="/">BlazePOS</a>
+            <a href="/pages/blazepos.html">BlazePOS</a>
             <a href="/">DroidPOS</a>
             <a href="/">Blazing Chef</a>
             <a href="/">Blaze Scan</a>
@@ -155,6 +156,6 @@
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>
