@@ -371,6 +371,38 @@ body {
     justify-content: center;
 }
 
+.about_section {
+    display: flex;
+    background-color: #212121;
+}
+
+.about_div {
+    vertical-align: middle;
+    justify-content: center;
+    align-self: center;
+    margin: 5px;
+}
+
+.about_div p {
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.about_div h1 {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.round_rectangle_img {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+    object-fit: contain;
+}
+
 .services h1 {
     color: #212121;
     background-size: 100%;
@@ -481,6 +513,21 @@ body {
         font-size: 2rem;
         margin-top: 12rem;
     }
+
+    .about_section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .about_div h1 {
+        align-self: center;
+    }
+
+    .about_section img {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -505,7 +552,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
 }
 
 #footer_logo {
