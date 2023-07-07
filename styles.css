@@ -399,8 +399,82 @@ body {
 .round_rectangle_img {
     width: 50%;
     border-radius: 10px;
-    margin: 10px;
+    margin: 40px;
     object-fit: contain;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    background-color: #4850ff;
+}
+
+.form-div h2 {
+    color: white;
+}
+
+.form {
+    padding: 6px;
+    width: 500px;
+    justify-content: center;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border: none;
+    margin: 6px 0px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea:focus {
+    border: 3px solid #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.email-btn {
+    width: 150px;
+    padding: 6px;
+    border: 3px solid #555;
+    font-weight: bold;
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.email-btn:hover {
+    background-color: #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: white;
 }
 
 .services h1 {
