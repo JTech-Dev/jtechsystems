@@ -258,12 +258,7 @@ body {
 #main_img {
     height: 80%;
     width: 80%;
-    /* transition: all 1s ease-in-out; */
 }
-
-/* #main_img:hover {
-    transform: rotate3d(0,1,0,360deg);
-} */
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
@@ -318,20 +313,9 @@ body {
     }
 }
 
-/* Services Section CSS */
-.services {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    justify-content: center;
-}
-
 .about_section {
     display: flex;
-    background-color: lightgray;
+    background-color: #212121;
     padding: 50px 60px;
 }
 
@@ -345,7 +329,7 @@ body {
 .about_div p {
     margin-right: auto;
     margin-left: auto;
-    color: #353535;
+    color: #fff;
     font-size: large;
     text-align: justify;
     justify-content: start;
@@ -356,7 +340,7 @@ body {
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
-    color: #212121;
+    color: #fff;
 }
 
 .round_rectangle_img {
@@ -367,21 +351,29 @@ body {
     object-fit: contain;
 }
 
-.our_services {
-    background-color: white;
+.our_products {
+    background-color: #fff;
     padding: 50px;
     color: #212121;
-}
-
-.our_products {
-    background-color: #212121;
-    padding: 50px;
-    color: #fff;
 }
 
 .our_products h2 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.product-img {
+    object-fit: contain;
+    width: 100px;
+    height: 120px;
+    justify-self: center;
+    align-self: center;
+}
+
+.our_services {
+    background-color: white;
+    padding: 50px;
+    color: #212121;
 }
 
 .our_services h2 {
@@ -394,6 +386,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .our_services_items {
@@ -407,6 +400,12 @@ body {
 
 .our_services_items p {
     width: 300px;
+}
+
+.services-link {
+    background-color: transparent;
+    text-decoration: none;
+    color: #212121;
 }
 
 .our_services_items button {
@@ -511,107 +510,20 @@ textarea {
     cursor: pointer;
 }
 
-.services h1 {
-    color: #212121;
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 3rem;
-}
-
-.services_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services_link {
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.services_card {
-    margin: 1rem;
-    height: 525px;
-    /* display: block; */
-    width: 400px;
-    border-radius: 4px;
-    border-width: 2px;
-    /* background-image: url('/images/BlazePOSLogo.png');
-    background-repeat: no-repeat;
-    background-size: contain; */
-    margin-right: auto;
-    margin-left: auto;
-    margin: 15px;
-    /* position: relative; */
-    color: #fff;
+/* .main-product {
     transform: scale(1);
     transition: 0.2s ease-in;
-}
+} */
 
-.main-product {
-    transform: scale(1);
-    transition: 0.2s ease-in;
-}
-
-.service-img {
-    object-fit: contain;
-    width: 100px;
-    height: 120px;
-}
-
-.services_card:nth-child(2) {
-    background-image: url('/images/blazingchef.png');
-}
-
-.services_card:nth-child(3) {
-    background-image: url('/images/box.png');
-}
-
-.services h2 {
-    text-align: center;
-    color: #212121;
-}
-
-.services_card p {
-    color: gray;
-    /* top: 400px;
-    left: 30px; */
-}
-
-.main-product:hover {
+/* .main-product:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
-}
-
-.services_card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.services_card:hover h2 {
-    font-weight: bold;
-    transform: scale(1.02);
-    transition: 0.2s ease-in;
-}
-
-.services_card:hover p {
-    transform: scale(1.02);
-    transition: 0.2s ease-in;
-}
+    border-style: solid;
+    border: #555;
+    border-width: 5px;
+} */
 
 @media screen and (max-width: 960px) {
-    .services {
-        min-height: 1600px;
-        justify-self: center;
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-
     .about_section {
         display: flex;
         flex-wrap: wrap;
@@ -639,17 +551,7 @@ textarea {
 }
 
 @media screen and (max-width: 490px) {
-    .services {
-        min-height: 1200px;
-    }
 
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services_card {
-        width: 300px;
-    }
 }
 
 /* Footer CSS */
@@ -834,8 +736,6 @@ textarea {
 }
 
 @media screen and (max-width: 820px) {
-
-
     .content-container {
         margin: 10px;
         display: flex;
@@ -850,8 +750,4 @@ textarea {
         height: 50%;
         margin-top: 16px;
     }
-}
-
-@media screen and (max-width: 490px) {
-
 }
