@@ -390,9 +390,6 @@ body {
 .our_services_items {
     margin: 10px;
     padding: 10px;
-    /* border-style: solid;
-    border-color: gray;
-    border-width: 2px;*/
     border-radius: 20px; 
 }
 
@@ -512,19 +509,6 @@ textarea {
     cursor: pointer;
 }
 
-/* .main-product {
-    transform: scale(1);
-    transition: 0.2s ease-in;
-} */
-
-/* .main-product:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    border-style: solid;
-    border: #555;
-    border-width: 5px;
-} */
-
 @media screen and (max-width: 960px) {
     .about_section {
         display: flex;
@@ -619,6 +603,8 @@ textarea {
 .social_icon-link {
     color: #fff;
     font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .social-media {
@@ -637,7 +623,7 @@ textarea {
 
 .social_icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 240px;
 }
@@ -752,4 +738,10 @@ textarea {
         height: 50%;
         margin-top: 16px;
     }
+}
+
+.logo_img_sm {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
 }
