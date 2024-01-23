@@ -351,6 +351,13 @@ body {
     object-fit: contain;
 }
 
+.rectangle_img {
+    width: 25%;
+    margin-left: 40px;
+    margin-right: 40px;
+    object-fit: contain;
+}
+
 .our_products {
     background-color: #fff;
     padding: 50px;
@@ -432,6 +439,19 @@ body {
     border-radius: 20px;
     margin: 10px auto 10px auto;
     object-fit: cover;
+}
+
+.services_img_lg {
+    width: 400px;
+    height: 300px;
+    margin: 5px auto 5px auto;
+    object-fit: contain;
+    transition:transform 0.25s ease;
+}
+
+.services_img_lg:hover {
+    -webkit-transform:scale(1.2); 
+    transform:scale(1.2);
 }
 
 .form-div {
