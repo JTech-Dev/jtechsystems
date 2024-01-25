@@ -6,17 +6,17 @@ menu.addEventListener('click', () => {
     menuLinks.classList.toggle('active')
 })
 
-// const emailButton = document.getElementById('em-btn');
-// emailButton.addEventListener("click", function(e){
-//     e.preventDefault();
+const emailButton = document.getElementById('em-btn');
+emailButton.addEventListener("click", function(e){
+    e.preventDefault();
 
-//     let nameValue = document.getElementById('name').value;
-//     let subjectValue = document.getElementById('subject').value;
-//     let messageValue = document.getElementById('message').value;
+    let nameValue = document.getElementById('name').value;
+    let subjectValue = document.getElementById('subject').value;
+    let messageValue = document.getElementById('message').value;
     
 
-//     window.location.href = `mailto:jtechstudiosdev@gmail.com?subject=${nameValue}, ${subjectValue}&body=${messageValue}`;
-// })
+    window.location.href = `mailto:jtechstudiosdev@gmail.com?subject=${nameValue}, ${subjectValue}&body=${messageValue}`;
+})
 
 // $(document).ready(function() {
 //     $('.services_img_lg').click(function(e) {
