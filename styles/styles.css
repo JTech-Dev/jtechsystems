@@ -204,7 +204,7 @@ body {
  /* Hero Section CSS */
  .main {
     background-color: #212121;
-    background-image: url('/images/code.jpg');
+    background-image: url('/jtechsystems/images/code.jpg');
     background-blend-mode: multiply;
     background-size: cover;
 }
