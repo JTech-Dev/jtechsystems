@@ -72,6 +72,10 @@ body {
     height: 100%;
 }
 
+.navbar_link_selected {
+    color: #87c1fa;
+}
+
 .navbar_btn {
     display: flex;
     justify-content: center;
